@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Air Passanger Satiesfaction </title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div style="color: rgb(227, 227, 237);">
+        <form action="{{url_for('predict')}}" method="post">
+            <h1> Air Passanger Satiesfaction Prediction <h1>
+                <select name="Air Passanger Satiesfaction Prediction" id="m" required="required"></select>
+
+            <input type="text" placeholder="Age" name="Age" id = "a">
+            <input type="text" placeholder="Flight Distance" name="Flight Distance" id = "a">
+            <input type="text" placeholder="Departure Delay " name="Departure Delay " id = "a">
+            <input type="text" placeholder="Arrival Delay " name="Arrival Delay " id = "a">
+    
+        
+
+            <h3> Gender </h3>
+            <select name="Gender" id="g" required="required">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+
+            <h3> Customer Type </h3>
+            <select name="Customer Type" id="g" required="required">
+                <option value="0">First-time </option>
+                <option value="1">Returning</option>
+        
+            </select>
+
+            <h3> Type of Travel </h3>
+            <select name="Type of Travel" id="research" required="required">
+                <option value="0">Personal</option>
+                <option value="1">Business</option>
+                
+
+            </select>
+
+            <h3> Class  </h3>
+            <select name="Class" id="research" required="required">
+                <option value="0">Economy</option>
+                <option value="1">Economy Plus</option>
+                <option value="2">Business</option>
+
+            </select>
+
+            <h3> Departure and Arrival Time Convenience  </h3>
+            <select name="Departure and Arrival Time Convenience" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> Ease of Online Booking  </h3>
+            <select name="Ease of Online Booking" id="research"  required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+
+            <h3> Check-in Service  </h3>
+            <select name="Check-in Service" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+
+            <h3> Online Boarding </h3>
+            <select name="Online Boarding" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+
+            <h3> Gate Location </h3>
+            <select name="Gate Location" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> On-board Service </h3>
+            <select name="On-board Service" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> Seat Comfort </h3>
+            <select name="Seat Comfort" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> Leg Room Service </h3>
+            <select name="Leg Room Service" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> Cleanliness </h3>
+            <select name="Cleanliness" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> Food and Drink </h3>
+            <select name="Food and Drink" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> In-flight Service </h3>
+            <select name="In-flight Service" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> In-flight Entertainment  </h3>
+            <select name="In-flight Entertainment " id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3> In-flight Wifi Service </h3>
+            <select name="In-flight Wifi Service" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <h3> Baggage Handling </h3>
+            <select name="Baggage Handling" id="research" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+    
+
+
+            <br><br> <button id="sub" type="submit"> Prediction </button>
+
+
+
+        </form>
+
+        <br><br>
+        {{ prediction_text }}
+    </div>
+
+</body>
+</html>
